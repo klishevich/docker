@@ -6,8 +6,10 @@
 
 `sudo docker swarm join-token manager`
 
-`docker swarm join --token sfasdfasdfasdfasdfasf 111.111.222.218:2377`
+`sudo docker swarm join --token sfasdfasdfasdfasdfasf 111.111.222.218:2377`
 
 `sudo docker node ls`
 
-`docker stack deploy -c docker-compose.yml getstartedlab`
+`sudo docker stack deploy -c docker-compose.yml getstartedlab`
+
+`sudo docker swarm leave --force`
