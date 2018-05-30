@@ -2,8 +2,6 @@
 
 `docker swarm init`
 
-`docker stack deploy -c docker-compose.yml`
-
 `docker stack deploy -c docker-compose.yml getstartedlab`
 
 ## list services
