@@ -19,3 +19,7 @@ docker service ps --no-trunc getstartedlab_web
 docker inspect -f "{{.Status.ContainerStatus.ContainerID}}" mriwtfmf7dwv
 
 docker logs 5333edc55d3a19c3e3292e89bd931baa97fe04695a1650b100ada1942c021dc7
+
+## if new container 
+
+docker pull klishevich/bp-hapi-react-redux:1.0.1
