@@ -1,5 +1,7 @@
 # SWARM Linode
 
+## commands on server
+
 `docker swarm init --advertise-addr 139.162.249.218`
 
 `docker info`
@@ -15,6 +17,8 @@
 `docker swarm leave --force`
 
 ## remote commands
+
+### start app
 
 `ssh fobos.j123.ru 'docker node ls'`
 
@@ -34,6 +38,12 @@
 
 `ssh fobos.j123.ru 'docker swarm leave --force'`
 
-## scaling app
+### scaling app
 
-* change docker-compose.yml
+* change docker-compose.yml (commit, push, pull)
+  * ssh fobos.j123.ru 'cd /home/mike/docker && git pull'
+* `ssh fobos.j123.ru 'cd /home/mike/docker/4_swarm && docker stack deploy -c docker-compose.yml getstartedlab'`
+
+### clean up
+
+* `ssh fobos.j123.ru 'docker stack rm getstartedlab'`
