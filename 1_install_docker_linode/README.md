@@ -19,3 +19,9 @@
 `sudo apt-get install docker-ce`
 
 `sudo docker run hello-world`
+
+### run without sudo (security concerns)
+
+* `sudo groupadd docker`
+* `sudo usermod -aG docker $USER`
+* `exit`
