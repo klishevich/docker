@@ -6,12 +6,12 @@
 
 ## problem solving
 
+`docker stack rm getstartedlab`
+
+`docker stack deploy -c docker-compose.yml getstartedlab`
+
 `docker service ls`
 
 `docker service ps getstartedlab_web`
 
 `docker service ps --no-trunc getstartedlab_web`
-
-`docker stack deploy -c docker-compose.yml getstartedlab`
-
-`docker stack rm getstartedlab`
