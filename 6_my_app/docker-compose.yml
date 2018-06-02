@@ -6,7 +6,7 @@ services:
       - "APP_MOCKS=1"
       - "MONGODB_HOST=mongo"
     deploy:
-      replicas: 3
+      replicas: 1
       restart_policy:
         condition: on-failure
       resources:
@@ -30,8 +30,6 @@ services:
       - webnet
   mongo:
     image: mongo
-    ports:
-      - "27017:27017"
     environment:
       - "MONGO_INITDB_ROOT_USERNAME=root"
       - "MONGO_INITDB_ROOT_PASSWORD=example"
