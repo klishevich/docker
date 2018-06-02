@@ -41,7 +41,7 @@
 ### scaling app
 
 * change docker-compose.yml (commit, push, pull)
-  * ssh fobos.j123.ru 'cd /home/mike/docker && git pull'
+  * `ssh fobos.j123.ru 'cd /home/mike/docker && git pull'`
 * `ssh fobos.j123.ru 'cd /home/mike/docker/4_swarm && docker stack deploy -c docker-compose.yml getstartedlab'`
 
 ### clean up
