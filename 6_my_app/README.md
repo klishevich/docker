@@ -17,3 +17,5 @@
 `docker service ps --no-trunc getstartedlab_web`
 
 `docker inspect -f "{{.Status.ContainerStatus.ContainerID}}" zj3wej2kpfji`
+
+`docker logs 5333edc55d3a19c3e3292e89bd931baa97fe04695a1650b100ada1942c021dc7`

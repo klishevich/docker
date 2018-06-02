@@ -4,7 +4,7 @@ services:
     image: klishevich/bp-hapi-react-redux:1.0.0
     environment:
       - "APP_MOCKS=1"
-      - "MONGODB_HOST=webnet"
+      - "MONGODB_HOST=mongo"
     deploy:
       replicas: 1
       restart_policy:
