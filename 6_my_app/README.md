@@ -15,3 +15,5 @@
 `docker service ps getstartedlab_web`
 
 `docker service ps --no-trunc getstartedlab_web`
+
+`docker inspect -f "{{.Status.ContainerStatus.ContainerID}}" zj3wej2kpfji`
