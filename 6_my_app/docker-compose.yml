@@ -9,7 +9,7 @@ services:
       - "MONGODB_PASS=rootpass"
       - "MONGODB_NAME=admin"
     deploy:
-      replicas: 1
+      replicas: 5
       restart_policy:
         condition: on-failure
       resources:
@@ -23,7 +23,7 @@ services:
   visualizer:
     image: dockersamples/visualizer:stable
     ports:
-      - "8090:8080"
+      - "8080:8080"
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"
     deploy:
@@ -36,8 +36,6 @@ services:
     environment:
       - "MONGO_INITDB_ROOT_USERNAME=root"
       - "MONGO_INITDB_ROOT_PASSWORD=rootpass"
-    ports:
-      - "27017:27017"
     volumes:
       - "/home/mike/data/mongo:/data/db"
     deploy:
