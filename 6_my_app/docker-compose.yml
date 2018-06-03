@@ -32,7 +32,7 @@ services:
     networks:
       - webnet
   mongo:
-    image: mongo
+    image: mongo:3.6.5-jessie
     environment:
       - "MONGO_INITDB_ROOT_USERNAME=root"
       - "MONGO_INITDB_ROOT_PASSWORD=rootpass"
