@@ -14,6 +14,9 @@
 
 `sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"`
 
+**Ubuntu 16.04**: `sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/debian jessie stable"`
+
 `sudo apt-get update`
 
 `sudo apt-get install docker-ce`
@@ -25,3 +28,11 @@
 * `sudo groupadd docker`
 * `sudo usermod -aG docker $USER`
 * `exit`
+
+## Install Mongo DB
+
+https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-16-04
+
+## Connect to service running on host
+
+`docker run --network host -p 8080:8080 -d 0c76faf31acc`
